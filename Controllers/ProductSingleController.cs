@@ -1,13 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SQLitePCL;
 
 namespace Project_Book_Shop.Controllers
 {
 	[Route("product-single")]
 	public class Product_Single : Controller
 	{
-        private readonly BookShopDbContext _context;
-        public Product_Single(BookShopDbContext context)
+        private readonly Db_context _context;
+        public Product_Single(Db_context context)
         {
             _context = context;
         }

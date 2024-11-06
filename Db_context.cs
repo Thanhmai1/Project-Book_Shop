@@ -19,6 +19,7 @@ namespace Project_Book_Shop
             base.OnModelCreating(modelBuilder);
         }
         public DbSet<User> Users { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
  
 }
